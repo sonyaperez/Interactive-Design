@@ -1,0 +1,106 @@
+/*General styling*/
+body {
+  background-color: #8d6ab8; /*Royal purple because the story 
+  is about a palace.*/
+  margin: 0;
+  font-family: 'Times New Roman', Times, serif;
+  padding: 20px;
+}
+
+/* When the screen is made smaller than 600px (applies to phones), 
+the window will turn a lighter purple. */
+@media (max-width: 600px) {
+  body {
+    background-color: #b398d1; 
+    color: rgb(90, 82, 73); /*Body text will turn gray*/
+  }
+  
+  h1 {
+    font-size: 1.6em;
+    text-align: center;
+  }
+
+  .author {
+    text-align: center; /*The text must be diplayed differently here to
+    avoid any weird spacing on mobile.*/
+    font-size: medium;
+  }
+
+  .block1, /*Grouping all the block text on index.html to have uniform styling 
+  that will be slightly altered when the user interacts with the screen. */
+  .block2,
+  .block3 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .button-container {
+    justify-content: center;
+  }
+
+  button {  /*Making a button to split up the two halves of the story: less busy and 
+    difficult for user./*
+    width: 100%; /*Adjusted for small screen.*/
+    font-size: 16px;
+    margin-top: 50px;
+  }
+} 
+
+/*Done styling for small screens/window minimization*/
+
+
+/* Start the styling for larger screens. The first chunk 
+of body styling will still apply here, so no need to repeat that.< */
+
+.wrapper {
+  display: block; /* Start new line for each p. */
+}
+
+.one {
+  margin-bottom: 20px;
+}
+
+h1 {
+  text-align: left;
+  margin-top: 50px;
+  font-size: 2.5em; /* Better than using px when working to make interactive. */
+  color: #7322b6;
+}
+
+.author {
+  color: #ffffff;
+  text-align: left;
+  margin-top: 10px; /* Distance between the author's name and the title of the poem. */
+  font-size: large;
+}
+
+/* Grouping.*/
+.block1,
+.block2,
+.block3 { 
+  flex: 2;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+button {
+  background-color: #979ca2;
+  color: white; 
+  border: none; /* Hiding any auto styling */
+  border-radius: 5px; /* Making corner of button curved */
+  font-size: 18px;
+  padding: 16px 32px;
+  margin-top: 100px; 
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 40px;
+}
+
+button:hover {
+  background-color: #d3bbe2; 
+}
+
